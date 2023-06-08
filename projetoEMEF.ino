@@ -1,5 +1,5 @@
 /* Modbus RTU Slave Library modified by Gonçalo Pereira
-
+   Library by: https://github.com/CMB27/ModbusRTUSlave
   Master/client port configured using the following settings:
   - Baud Rate: 38400
   - Data Bits: 8
