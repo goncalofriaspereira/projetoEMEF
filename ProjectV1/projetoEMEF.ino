@@ -1,5 +1,5 @@
 /* Modbus RTU Slave Library modified by Gonçalo Pereira
-   Library by: https://github.com/CMB27/ModbusRTUSlave
+
   Master/client port configured using the following settings:
   - Baud Rate: 38400
   - Data Bits: 8
@@ -103,10 +103,10 @@ long holdingRegisterRead(unsigned int address) {
   int readTemp;
   switch (address) {
     case 0:
-      readTemp = map(holdingBuffer[0], 0, 255, 0, 1024);
+      readTemp = map(holdingBuffer[0], 0, 255, 0, 1023);
       return readTemp;
     case 1:
-      readTemp = map(holdingBuffer[1], 0, 255, 0, 1024);
+      readTemp = map(holdingBuffer[1], 0, 255, 0, 1023);
       return readTemp;
     default:
       return -1;
@@ -114,13 +114,15 @@ long holdingRegisterRead(unsigned int address) {
 }
 
 boolean holdingRegisterWrite(word address, word value) {
+  if (value < 0) value = 0;
+  if (value > 1023) value = 1023;
   switch (address) {
     case 0:
-      holdingBuffer[0] = map(value, 0, 1024, 0, 255);
+      holdingBuffer[0] = map(value, 0, 1023, 0, 255);
       analogWrite(outputAnalogPins[0], holdingBuffer[0]);
       break;
     case 1:
-      holdingBuffer[1] = map(value, 0, 1024, 0, 255);
+      holdingBuffer[1] = map(value, 0, 1023, 0, 255);
       analogWrite(outputAnalogPins[1], holdingBuffer[1]);
     default:
       return false;
