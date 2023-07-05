@@ -6,5 +6,9 @@ Library used from https://github.com/CMB27/ModbusRTUSlave.
 # Project V1
 First iteration of the project, presented in the final report.
 
+![SchematicV1](SchematicV1.png)
+
 # Project V2
 Improved project with an Arduino Nano and several other improvements.
+
+![SchematicV2](SchematicV2.png)
