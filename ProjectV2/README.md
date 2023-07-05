@@ -6,6 +6,6 @@ Changed MCU to Arduino Nano, which is smaller; added power reverse polarity prot
 
 NOTE: Arduino Nano code will be updated as soon as the DAC code is sucessfully tried and tested with the arrival of the PCB and respective montage, since there was no μMAX to DIP adapter to test the DAC before implementation.
 
-![SchematicV2](SchematicV2.png)
+![SchematicV2](SchematicV2.pn)
 
-![PCBLayoutV2](PCBLayoutV2.png)
+![PCBLayoutV2](PCBLayoutV2.ng)
