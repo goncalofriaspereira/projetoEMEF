@@ -1,3 +1,3 @@
-First iteration of the project.
+First version of the project presented in the final report built around an Arduino Uno.
 
-![Schematic](SchematicV1.png)
+![SchematicV1](SchematicV1.png)
