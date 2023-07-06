@@ -11,4 +11,4 @@ First iteration of the project, presented in the final report.
 # Project V2
 Improved project with an Arduino Nano and several other improvements.
 
-![SchematicV2](ProjectV2/SchematicV2.png
+![SchematicV2](ProjectV2/SchematicV2.png)
